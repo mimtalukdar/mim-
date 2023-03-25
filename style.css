@@ -1,0 +1,41 @@
+*{
+	margin:0;
+	padding:0;
+}
+.menubar{
+	background:black;
+	padding:20px;
+}
+.menubar ul{
+	display:flex;
+	list-style:none;
+}
+.menubar ul li{
+	width:100px;
+	text-align:center;
+	position:relative;
+	padding:10px;
+	
+}
+.menubar ul li a{
+	color:white;
+	text-decoration:none;
+	font-size:18px;
+}
+.menubar ul li::after{
+	content:"";
+	position:absolute;
+	width:100px;
+	height:2px;
+	background:crimson;
+	left:0;
+	bottom:0;
+	transition:.5s;
+	display:none;
+	
+}
+.menubar ul li:hover::after{
+	width:100%;
+	display:block;
+	
+}
